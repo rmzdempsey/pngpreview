@@ -1,0 +1,152 @@
+[
+  {
+    "slug": "the-property-network",
+    "name": "The Property Network",
+    "market": "Property marketing & print",
+    "tagline": "Print, brochure and marketing support for estate agents, developers and property businesses.",
+    "description": "A property-focused brochure and marketing network helping agents, developers and local businesses promote homes, services and sales campaigns with professional print and digital support.",
+    "location": "Across the property sector",
+    "logo": "/logos/the-property-network-building-logo-tight.svg",
+    "palette": {
+      "primary": "#2f83bd",
+      "primaryDark": "#173d67",
+      "accent": "#d6aa53",
+      "accentSoft": "#f5ecd7",
+      "surface": "#edf4fb",
+      "ink": "#0f1e32",
+      "muted": "#5c6974",
+      "card": "#ffffff"
+    },
+    "features": [
+      "Property brochures",
+      "Print campaigns",
+      "Agent marketing"
+    ],
+    "brochureHighlights": [
+      "Developer launch packs",
+      "Estate agent flyers",
+      "Property signage & window graphics"
+    ],
+    "layout": "classic"
+  },
+  {
+    "slug": "property-network-story",
+    "name": "The Property Network",
+    "market": "Property marketing & print",
+    "tagline": "Brochure-led property marketing that gives homes, developers and local services a stronger story.",
+    "description": "A story-driven property network for new homes, sales campaigns and local business promotion, combining brochure design, print support and audience-led marketing across the property sector.",
+    "location": "Across local property markets",
+    "logo": "/logos/the-property-network-building-logo-tight.svg",
+    "palette": {
+      "primary": "#2f83bd",
+      "primaryDark": "#173d67",
+      "accent": "#d6aa53",
+      "accentSoft": "#f5ecd7",
+      "surface": "#edf4fb",
+      "ink": "#0f1e32",
+      "muted": "#5c6974",
+      "card": "#ffffff"
+    },
+    "features": [
+      "Developer launches",
+      "Sales brochures",
+      "Local property promotion"
+    ],
+    "brochureHighlights": [
+      "New home launch packs",
+      "Estate agent campaign design",
+      "Local service advertising"
+    ],
+    "layout": "story"
+  },
+  {
+    "slug": "property-network-forty",
+    "name": "The Property Network",
+    "market": "Property marketing & print",
+    "tagline": "A flexible property brochure platform for agents, developers and local services that want to stand out.",
+    "description": "A tile-based property marketing experience built to showcase new-home launches, local services, developer campaigns and brochure opportunities in a modern, high-clarity format.",
+    "location": "Across property sectors",
+    "logo": "/logos/the-property-network-building-logo-tight.svg",
+    "palette": {
+      "primary": "#2f83bd",
+      "primaryDark": "#173d67",
+      "accent": "#d6aa53",
+      "accentSoft": "#f5ecd7",
+      "surface": "#edf4fb",
+      "ink": "#0f1e32",
+      "muted": "#5c6974",
+      "card": "#ffffff"
+    },
+    "features": [
+      "Development launches",
+      "Agent brochure support",
+      "Property advertising"
+    ],
+    "brochureHighlights": [
+      "Property launch packs",
+      "Estate agency campaigns",
+      "Local business placement"
+    ],
+    "layout": "forty"
+  },
+  {
+    "slug": "property-network-office",
+    "name": "The Property Network",
+    "market": "Commercial property marketing",
+    "tagline": "Office space, business premises and commercial property campaigns built around clarity, reach and local trust.",
+    "description": "A premium office-property marketing preview for commercial spaces, business parks and office occupiers, pairing strong brand positioning with brochure support, property storytelling and campaign-ready creative.",
+    "location": "Commercial property market",
+    "logo": "/logos/the-property-network-building-logo-tight.svg",
+    "palette": {
+      "primary": "#2f83bd",
+      "primaryDark": "#173d67",
+      "accent": "#d6aa53",
+      "accentSoft": "#f5ecd7",
+      "surface": "#edf4fb",
+      "ink": "#0f1e32",
+      "muted": "#5c6974",
+      "card": "#ffffff"
+    },
+    "features": [
+      "Office brochure packs",
+      "Commercial property campaigns",
+      "Business location marketing"
+    ],
+    "brochureHighlights": [
+      "Office space launch brochures",
+      "Workspace marketing campaigns",
+      "Commercial property advertising"
+    ],
+    "layout": "office"
+  },
+  {
+    "slug": "property-network-apollo",
+    "name": "The Property Network",
+    "market": "Property business marketing support",
+    "tagline": "Free brochureware for property businesses, funded by relevant service providers and specialist advertisers.",
+    "description": "A motion-led marketing preview built for property businesses, estate agents and developers who want clear, memorable brochure support backed by relevant local partners.",
+    "location": "Property business marketing",
+    "logo": "/logos/the-property-network-building-logo-tight.svg",
+    "palette": {
+      "primary": "#2f83bd",
+      "primaryDark": "#173d67",
+      "accent": "#d6aa53",
+      "accentSoft": "#f5ecd7",
+      "surface": "#edf4fb",
+      "ink": "#0f1e32",
+      "muted": "#5c6974",
+      "card": "#ffffff"
+    },
+    "features": [
+      "Brochureware support",
+      "Campaign storytelling",
+      "Supplier-backed visibility"
+    ],
+    "brochureHighlights": [
+      "Estate agent brochure packs",
+      "Developer launch support",
+      "Local service advertising"
+    ],
+    "layout": "apollo"
+  }
+]
