@@ -81,33 +81,49 @@ export function PreviewDetail() {
   const palette = preview.palette;
 
   if (preview.layout === "uw") {
-    const uwBenefits = [
-      { title: "Everything in one place", text: "Brochureware, marketing support and partner visibility consolidated around the property sector." },
-      { title: "Clearer savings", text: "Simple messaging that makes the value of property marketing and campaign support obvious to buyers and businesses." },
-      { title: "Built for local reach", text: "A high-trust format aimed at agents, developers, service providers and property-related audiences." },
+    const uwSteps = [
+      {
+        number: "1",
+        title: "Pick your services",
+        text: "Choose the property marketing support that fits your business, from brochures to local visibility.",
+        accent: "border-[#ffb703] bg-[#fff1d4]",
+      },
+      {
+        number: "2",
+        title: "We handle the setup",
+        text: "We coordinate the brochure and campaign flow, so the work is straightforward and easy to manage.",
+        accent: "border-[#7dc8c3] bg-[#dff5f1]",
+      },
+      {
+        number: "3",
+        title: "Done",
+        text: "Your property business gets a clear, polished presence without the usual agency cost barrier.",
+        accent: "border-[#f68f54] bg-[#ffe7d6]",
+      },
     ];
 
-    const uwServices = [
-      "Brochure design",
-      "Launch campaign support",
-      "Print and digital editorial",
-      "Local business visibility",
+    const uwReasons = [
+      { title: "Save money", text: "A simple, affordable route to property marketing reach.", accent: "border-[#ffb703] bg-[#fff4d6]" },
+      { title: "One account", text: "Your brochures, campaigns and supplier visibility, in one place.", accent: "border-[#7dc8c3] bg-[#e6f5f1]" },
+      { title: "No hassle", text: "Clear setup and a process designed to keep things easy.", accent: "border-[#d9a4ff] bg-[#f0e7ff]" },
+      { title: "Local focus", text: "Reach the right buyers, tenants and service providers quickly.", accent: "border-[#f68f54] bg-[#ffe7d6]" },
     ];
 
     return (
-      <main className="min-h-screen bg-[#f5f7fb] text-slate-900 antialiased">
-        <header className="border-b border-slate-200 bg-white">
+      <main className="min-h-screen bg-[#efeae3] text-[#1f1d2d] antialiased">
+        <header className="bg-[#6b2bb7] text-white">
           <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-6 py-4">
             <div className="flex items-center gap-4">
-              <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#f5f0ff] p-2 shadow-sm">
+              <div className="flex h-12 w-12 items-center justify-center overflow-hidden rounded-xl border border-white/20 bg-white/10 p-2 shadow-sm">
                 <img src={preview.logo} alt={`${preview.name} logo`} className="h-full w-full object-contain" />
               </div>
-              <div>
-                <p className="text-[10px] font-bold uppercase tracking-[0.28em] text-[#5b3fd3]">Property business marketing</p>
-                <h1 className="text-lg font-black text-slate-900">The Property Network</h1>
+              <div className="leading-none">
+                <div className="text-[9px] font-black uppercase tracking-[0.28em] text-white/80">Property marketing</div>
+                <div className="mt-1 text-[15px] font-black text-white">The Property Network</div>
               </div>
             </div>
-            <nav className="hidden items-center gap-6 text-sm font-bold uppercase tracking-[0.12em] text-slate-600 md:flex">
+
+            <nav className="hidden items-center gap-6 text-[11px] font-black uppercase tracking-[0.2em] text-white/90 md:flex">
               <a href="#benefits">Benefits</a>
               <a href="#services">Services</a>
               <a href="#contact">Contact</a>
@@ -115,114 +131,98 @@ export function PreviewDetail() {
           </div>
         </header>
 
-        <section className="relative overflow-hidden bg-[radial-gradient(circle_at_top_left,#f5f0ff_0%,#f5f7fb_35%,#eef3fb_100%)]">
-          <div className="mx-auto grid max-w-7xl gap-10 px-6 pb-16 pt-12 lg:grid-cols-[1.15fr_0.85fr] lg:items-center">
-            <div>
-              <p className="text-xs font-bold uppercase tracking-[0.32em] text-[#5b3fd3]">Property services, sorted</p>
-              <h2 className="mt-5 max-w-[700px] text-[clamp(3rem,5vw,6rem)] font-black leading-[0.9] tracking-[-0.06em] text-slate-900">
-                The property network
-                <span className="mt-2 block text-[#5b3fd3]">made simpler.</span>
-              </h2>
-              <p className="mt-6 max-w-xl text-lg leading-8 text-slate-600">
-                Free brochureware for property businesses, funded by relevant service providers and specialist advertisers, with a premium feel and a clearer customer journey.
+        <section className="bg-[#6b2bb7] pb-10 text-white">
+          <div className="mx-auto max-w-7xl px-6 py-8">
+            <div className="mx-auto max-w-4xl text-center">
+              <div className="text-[clamp(2.8rem,5vw,5.2rem)] font-black leading-[0.9] tracking-[-0.03em] text-white">
+                Get your
+                <span className="inline-block px-2">property marketing</span>
+                <span className="block">together.</span>
+              </div>
+              <p className="mx-auto mt-4 max-w-xl text-base leading-7 text-white/80">
+                Brochureware, local visibility and service-provider support — all in one simple, clear system.
               </p>
 
-              <div className="mt-8 flex flex-wrap gap-3">
-                <a href="#contact" className="rounded-full bg-[#5b3fd3] px-6 py-3 text-sm font-black uppercase tracking-[0.2em] text-white">Request brochure</a>
-                <a href="#services" className="rounded-full border border-slate-300 bg-white px-6 py-3 text-sm font-black uppercase tracking-[0.2em] text-slate-800">View services</a>
-              </div>
-
-              <div className="mt-8 flex flex-wrap gap-4 text-sm font-semibold text-slate-600">
-                {[
-                  "Brochures",
-                  "Campaign support",
-                  "Partner-funded visibility",
-                ].map((item) => (
-                  <span key={item} className="rounded-full border border-slate-200 bg-white px-3 py-2 shadow-sm">{item}</span>
-                ))}
+              <div className="mt-8 flex justify-center gap-3">
+                <a href="#contact" className="rounded-full bg-[#f6b52f] px-6 py-3 text-xs font-black uppercase tracking-[0.18em] text-[#1f1d2d]">Get a quote</a>
+                <a href="#services" className="rounded-full border border-white/35 bg-white/10 px-6 py-3 text-xs font-black uppercase tracking-[0.18em] text-white">Speak to an expert</a>
               </div>
             </div>
+          </div>
+        </section>
 
-            <div className="rounded-[30px] border border-slate-200 bg-white p-5 shadow-[0_25px_60px_rgba(29,27,56,0.09)]">
-              <div className="overflow-hidden rounded-[24px] bg-[#f7f3ff] p-4">
-                <img
-                  src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1200&q=80"
-                  alt="Property business environment"
-                  className="h-[350px] w-full rounded-[20px] object-cover"
-                />
-              </div>
-              <div className="mt-5 grid gap-4 sm:grid-cols-3">
-                {[
-                  ["Free", "brochureware"],
-                  ["Local", "audiences"],
-                  ["Trusted", "partners"],
-                ].map(([value, label]) => (
-                  <div key={label} className="rounded-2xl bg-slate-50 p-4 text-center">
-                    <p className="text-2xl font-black text-slate-900">{value}</p>
-                    <p className="mt-1 text-[10px] font-bold uppercase tracking-[0.18em] text-slate-500">{label}</p>
+        <section id="services" className="bg-[#f3efe8] py-20">
+          <div className="mx-auto max-w-6xl px-6 text-center">
+            <p className="text-xs font-black uppercase tracking-[0.28em] text-[#4a3c72]">The last switch you’ll ever make</p>
+            <p className="mx-auto mt-3 max-w-xl text-sm text-[#5d586d]">
+              Simple property marketing support that keeps your business visible, relevant and easy to trust.
+            </p>
+
+            <div className="mt-12 grid gap-4 md:grid-cols-3">
+              {uwSteps.map((step) => (
+                <div key={step.number} className="text-center">
+                  <div className={`mx-auto flex h-20 w-20 items-center justify-center rounded-[22px] border-2 text-[2.5rem] font-black text-[#1f1d2d] ${step.accent}`}>
+                    {step.number}
                   </div>
-                ))}
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section id="benefits" className="mx-auto max-w-7xl px-6 py-16">
-          <div className="mb-8 text-center">
-            <p className="text-xs font-bold uppercase tracking-[0.3em] text-[#5b3fd3]">Why property businesses choose us</p>
-            <h3 className="mt-3 text-4xl font-black tracking-[-0.05em] text-slate-900 md:text-5xl">A simpler way to reach the right market.</h3>
-          </div>
-
-          <div className="grid gap-5 md:grid-cols-3">
-            {uwBenefits.map((benefit) => (
-              <article key={benefit.title} className="rounded-[28px] border border-slate-200 bg-white p-7 shadow-sm">
-                <div className="mb-5 inline-flex h-12 w-12 items-center justify-center rounded-full bg-[#ff8a1d] text-lg font-black text-white">✓</div>
-                <h4 className="text-2xl font-black tracking-[-0.04em] text-slate-900">{benefit.title}</h4>
-                <p className="mt-4 text-base leading-7 text-slate-600">{benefit.text}</p>
-              </article>
-            ))}
-          </div>
-        </section>
-
-        <section id="services" className="bg-[#171b2d] py-16 text-white">
-          <div className="mx-auto max-w-7xl px-6">
-            <div className="mb-10 max-w-2xl">
-              <p className="text-xs font-bold uppercase tracking-[0.3em] text-[#c7b7ff]">Services</p>
-              <h3 className="mt-3 text-4xl font-black tracking-[-0.05em] text-white">Created for property businesses and the services around them.</h3>
-            </div>
-
-            <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-4">
-              {uwServices.map((service) => (
-                <div key={service} className="rounded-[22px] border border-white/10 bg-white/5 p-5 backdrop-blur-sm">
-                  <div className="mb-4 h-2.5 w-12 rounded-full bg-[#ff8a1d]" />
-                  <p className="text-xl font-black text-white">{service}</p>
+                  <h4 className="mt-5 text-2xl font-black tracking-[-0.04em] text-[#1f1d2d]">{step.title}</h4>
+                  <p className="mx-auto mt-3 max-w-[250px] text-sm leading-6 text-[#5d586d]">{step.text}</p>
                 </div>
               ))}
             </div>
           </div>
         </section>
 
-        <section className="mx-auto max-w-7xl px-6 py-16">
+        <section id="benefits" className="bg-[#f3efe8] pb-20">
+          <div className="mx-auto max-w-6xl px-6 text-center">
+            <p className="text-xs font-black uppercase tracking-[0.28em] text-[#4a3c72]">Why switch to us</p>
+            <div className="mt-8 grid gap-4 md:grid-cols-4">
+              {uwReasons.map((reason) => (
+                <article key={reason.title} className={`rounded-[24px] border-2 p-5 text-left shadow-sm ${reason.accent}`}>
+                  <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-full bg-white/60 text-lg font-black text-[#1f1d2d]">✓</div>
+                  <h4 className="text-xl font-black tracking-[-0.04em] text-[#1f1d2d]">{reason.title}</h4>
+                  <p className="mt-3 text-sm leading-6 text-[#473f58]">{reason.text}</p>
+                </article>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section className="bg-[#2d1b4b] px-6 py-16 text-white">
+          <div className="mx-auto max-w-5xl text-center">
+            <p className="text-[clamp(2rem,4vw,3.4rem)] font-black leading-[0.95] tracking-[-0.03em]">
+              Take control of your property marketing costs.
+            </p>
+            <p className="mx-auto mt-4 max-w-xl text-base leading-7 text-white/75">
+              Reach the right buyers, tenants and service providers with a straightforward, affordable brochureware model built for clarity.
+            </p>
+            <div className="mt-8 flex justify-center gap-3">
+              <a href="#contact" className="rounded-full bg-[#f6b52f] px-6 py-3 text-xs font-black uppercase tracking-[0.18em] text-[#1f1d2d]">Get a quote</a>
+              <a href="#contact" className="rounded-full border border-white/35 bg-white/10 px-6 py-3 text-xs font-black uppercase tracking-[0.18em] text-white">Speak to an expert</a>
+            </div>
+          </div>
+        </section>
+
+        <section id="contact" className="mx-auto max-w-6xl px-6 py-20">
           <div className="grid gap-6 lg:grid-cols-2">
-            <div className="rounded-[30px] border border-slate-200 bg-white p-8 shadow-sm">
-              <p className="text-xs font-bold uppercase tracking-[0.3em] text-[#5b3fd3]">Request brochure</p>
-              <h3 className="mt-3 text-3xl font-black tracking-[-0.05em] text-slate-900">Get a brochure pack for your property business.</h3>
+            <div className="rounded-[28px] border border-[#d7d0c8] bg-white p-8 shadow-sm">
+              <p className="text-xs font-black uppercase tracking-[0.28em] text-[#4a3c72]">Request brochure</p>
+              <h3 className="mt-3 text-3xl font-black tracking-[-0.05em] text-[#1f1d2d]">Get a brochure pack for your property business.</h3>
               <form className="mt-6 grid gap-4">
-                <input className="rounded-xl border border-slate-200 bg-slate-50 px-3 py-3" placeholder="Your name" />
-                <input className="rounded-xl border border-slate-200 bg-slate-50 px-3 py-3" placeholder="Email address" />
-                <textarea className="min-h-28 rounded-xl border border-slate-200 bg-slate-50 px-3 py-3" placeholder="Tell us about your property offer or campaign" />
-                <button type="button" className="rounded-full bg-[#5b3fd3] px-5 py-3 text-sm font-black uppercase tracking-[0.2em] text-white">Send enquiry</button>
+                <input className="rounded-xl border border-[#d7d0c8] bg-[#f7f3ee] px-3 py-3" placeholder="Your name" />
+                <input className="rounded-xl border border-[#d7d0c8] bg-[#f7f3ee] px-3 py-3" placeholder="Email address" />
+                <textarea className="min-h-28 rounded-xl border border-[#d7d0c8] bg-[#f7f3ee] px-3 py-3" placeholder="Tell us about your property offer or campaign" />
+                <button type="button" className="rounded-full bg-[#f6b52f] px-5 py-3 text-sm font-black uppercase tracking-[0.2em] text-[#1f1d2d]">Send enquiry</button>
               </form>
             </div>
 
-            <div id="contact" className="rounded-[30px] border border-slate-200 bg-[#f5f0ff] p-8 shadow-sm">
-              <p className="text-xs font-bold uppercase tracking-[0.3em] text-[#5b3fd3]">Advertise with us</p>
-              <h3 className="mt-3 text-3xl font-black tracking-[-0.05em] text-slate-900">Reach the property market through trusted brochureware.</h3>
+            <div className="rounded-[28px] border border-[#d7d0c8] bg-[#f8f3ee] p-8 shadow-sm">
+              <p className="text-xs font-black uppercase tracking-[0.28em] text-[#4a3c72]">Advertise with us</p>
+              <h3 className="mt-3 text-3xl font-black tracking-[-0.05em] text-[#1f1d2d]">Reach buyers, tenants and relevant service providers.</h3>
               <form className="mt-6 grid gap-4">
-                <input className="rounded-xl border border-slate-200 bg-white px-3 py-3" placeholder="Company name" />
-                <input className="rounded-xl border border-slate-200 bg-white px-3 py-3" placeholder="Contact email" />
-                <textarea className="min-h-28 rounded-xl border border-slate-200 bg-white px-3 py-3" placeholder="Tell us about your service and audience" />
-                <button type="button" className="rounded-full bg-[#ff8a1d] px-5 py-3 text-sm font-black uppercase tracking-[0.2em] text-white">Request rates</button>
+                <input className="rounded-xl border border-[#d7d0c8] bg-white px-3 py-3" placeholder="Company name" />
+                <input className="rounded-xl border border-[#d7d0c8] bg-white px-3 py-3" placeholder="Contact email" />
+                <textarea className="min-h-28 rounded-xl border border-[#d7d0c8] bg-white px-3 py-3" placeholder="Tell us about your service and audience" />
+                <button type="button" className="rounded-full bg-[#f6b52f] px-5 py-3 text-sm font-black uppercase tracking-[0.2em] text-[#1f1d2d]">Request rates</button>
               </form>
             </div>
           </div>

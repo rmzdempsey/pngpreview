@@ -158,13 +158,13 @@
     "location": "Property business marketing",
     "logo": "/logos/the-property-network-building-logo-tight.svg",
     "palette": {
-      "primary": "#5b3fd3",
-      "primaryDark": "#1d1b38",
-      "accent": "#ff8a1d",
-      "accentSoft": "#f5f0ff",
-      "surface": "#f5f7fb",
-      "ink": "#1a2135",
-      "muted": "#5f6675",
+      "primary": "#2f2b52",
+      "primaryDark": "#201b38",
+      "accent": "#d1a266",
+      "accentSoft": "#f3efe9",
+      "surface": "#f5f2ee",
+      "ink": "#201b38",
+      "muted": "#5a5869",
       "card": "#ffffff"
     },
     "features": [
