@@ -23,7 +23,7 @@ export type PreviewSite = {
   palette: PreviewPalette;
   features: string[];
   brochureHighlights: string[];
-  layout?: "classic" | "story" | "forty" | "office" | "apollo";
+  layout?: "classic" | "story" | "forty" | "office" | "apollo" | "uw";
 };
 
 const defaultPreviews: PreviewSite[] = [
@@ -182,6 +182,38 @@ const defaultPreviews: PreviewSite[] = [
       "Local service advertising",
     ],
     layout: "apollo",
+  },
+  {
+    slug: "property-network-uw",
+    name: "The Property Network",
+    market: "Property business marketing support",
+    tagline:
+      "All your property marketing, brochureware and service-provider visibility in one place.",
+    description:
+      "A UW-inspired preview designed for property businesses that want a premium, easy-to-understand brochure platform supported by local service providers and industry advertisers.",
+    location: "Property business marketing",
+    logo: "/logos/the-property-network-building-logo-tight.svg",
+    palette: {
+      primary: "#5b3fd3",
+      primaryDark: "#1d1b38",
+      accent: "#ff8a1d",
+      accentSoft: "#f5f0ff",
+      surface: "#f5f7fb",
+      ink: "#1a2135",
+      muted: "#5f6675",
+      card: "#ffffff",
+    },
+    features: [
+      "Property brochureware",
+      "Marketing support",
+      "Qualified visibility",
+    ],
+    brochureHighlights: [
+      "Estate agent brochure packs",
+      "Developer launch campaigns",
+      "Local service provider placement",
+    ],
+    layout: "uw",
   },
 ];
 
